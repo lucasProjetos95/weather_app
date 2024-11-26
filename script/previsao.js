@@ -6,7 +6,7 @@ const chave = 'bjRmaxMAnyMKqk16sR2tH4RGQIQw70Z1';
 //obter informações do clima(video 103):
 const clima = async (acesso)=> {
 
-    const base = 'http://dataservice.accuweather.com/currentconditions/v1/';
+    const base = 'https://dataservice.accuweather.com/currentconditions/v1/';
     const consulta = `${acesso}?apikey=${chave}`;
     const response = await fetch(base+consulta);
     const dados = await response.json();
