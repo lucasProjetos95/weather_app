@@ -10,6 +10,7 @@ const clima = async (acesso)=> {
     const consulta = `${acesso}?apikey=${chave}`;
     const response = await fetch(base+consulta);
     const dados = await response.json();
+    console.log(dados)
     return dados[0];// apesar de ter apenas um elemento selecionar o primerio elemento, apra retornar  um objeto e não uma matriz para facilitar no uso
 }
 
