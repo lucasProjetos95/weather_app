@@ -17,7 +17,7 @@ const clima = async (acesso)=> {
 //obter informações da cidade (video102):
 const cidade = async (city)=>{
 
-    const base = 'http://dataservice.accuweather.com/locations/v1/cities/search'
+    const base = 'https://dataservice.accuweather.com/locations/v1/cities/search'
     const consulta = `?apikey=${chave}&q=${city}`;
     
     const response = await fetch(base+consulta);
